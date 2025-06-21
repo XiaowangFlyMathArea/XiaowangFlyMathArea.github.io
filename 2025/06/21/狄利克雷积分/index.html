@@ -19,15 +19,15 @@
   <meta name="author" content="XiaowangFly">
   <meta name="keywords" content="">
   
-    <meta name="description" content="约瑟夫问题">
+    <meta name="description" content="狄利克雷积分">
 <meta property="og:type" content="article">
-<meta property="og:title" content="约瑟夫问题">
-<meta property="og:url" content="http://xiaowangflymatharea.github.io/2025/06/17/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="狄利克雷积分">
+<meta property="og:url" content="http://xiaowangflymatharea.github.io/2025/06/21/%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="XiaowangFly&#39;s Math Area">
-<meta property="og:description" content="约瑟夫问题">
+<meta property="og:description" content="狄利克雷积分">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-06-17T12:03:16.000Z">
-<meta property="article:modified_time" content="2025-06-17T12:07:34.370Z">
+<meta property="article:published_time" content="2025-06-21T01:56:08.000Z">
+<meta property="article:modified_time" content="2025-06-21T04:10:29.842Z">
 <meta property="article:author" content="XiaowangFly">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>约瑟夫问题 - XiaowangFly&#39;s Math Area</title>
+  <title>狄利克雷积分 - XiaowangFly&#39;s Math Area</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -177,7 +177,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="约瑟夫问题"></span>
+            <span id="subtitle" data-typed-text="狄利克雷积分"></span>
           
         </div>
 
@@ -188,8 +188,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-06-17 20:03" pubdate>
-          2025年6月17日 晚上
+        <time datetime="2025-06-21 09:56" pubdate>
+          2025年6月21日 上午
         </time>
       </span>
     
@@ -200,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          247 字
+          25 字
         
       </span>
     
@@ -211,7 +211,7 @@
         
         
         
-          3 分钟
+          1 分钟
         
       </span>
     
@@ -257,64 +257,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">约瑟夫问题</h1>
+            <h1 id="seo-header">狄利克雷积分</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="约瑟夫问题"><a href="#约瑟夫问题" class="headerlink" title="约瑟夫问题"></a>约瑟夫问题</h2><h3 id="情景导入"><a href="#情景导入" class="headerlink" title="情景导入"></a>情景导入</h3><p>在古代有一群人被抓了起来，这群人决定自杀，他们围成一个圈（顺时针标记1，2，3……），每个人杀掉左边的人（1杀2，3杀4，依次类推），杀完之后不断轮回，直到最后一个人自杀，但是约瑟夫不想死，那么约瑟夫在哪个位置能活着？</p>
-<h3 id="问题解答"><a href="#问题解答" class="headerlink" title="问题解答"></a>问题解答</h3><p>我们列出表格，当人数为</p>
-<div style="font-size:20px;">
-$$
-2^n
-$$
-</div>
-人时，存活的总是第一个人，之后距离下一个(
-<div style="font-size:20px;">
-$$
-2^{n+1}
-$$
-</div>
-)个时，每余处一位，存活位置代号+2
-
-<h3 id="问题解答（公式）"><a href="#问题解答（公式）" class="headerlink" title="问题解答（公式）"></a>问题解答（公式）</h3><p>所以，当有n个人（n&gt;0）时，存活位置代号：</p>
-<div style="font-size:50px;">
-$$
-2\times(n-2^{⌊\frac{log(n)}{log(2)}⌋})+1
-$$
-</div>
-
-<h3 id="公式解释"><a href="#公式解释" class="headerlink" title="公式解释"></a>公式解释</h3><div style="font-size:25px;">
-log:对数，上方公式是以2为底，作用（例）：
-关于x的方程
-$$
-2^{x}=n
-$$
-的解为
-$$
-x=\frac{log(n)}{log(2)}
-$$
-<br>
-⌊⌋:舍去小数，例：
-$$
-⌊4⌋=4,⌊5.1⌋=5,⌊4.9⌋=4
-$$
-</div>
-
-
-<h3 id="一键计算"><a href="#一键计算" class="headerlink" title="一键计算"></a>一键计算</h3><script>
-        function calculate() {
-            let n = parseFloat(document.getElementById("inputNumber").value);
-            if (isNaN(n) || n <= 0) {
-                document.getElementById("result").innerText = "请输入一个正数";
-                return;
-            }
-            let power = Math.pow(2, Math.floor(Math.log(n) / Math.log(2)));
-            let result = 2 * (n - power) + 1;
-            document.getElementById("result").innerText = "在第" + result + "位能活下来";
-        }
-</script>
-<p><label for="inputNumber">输入n（人数），我门将计算：</label><br><input type="number" id="inputNumber" min="1" step="1"><br><button onclick="calculate()">计算</button><br><span id="result">这里显示存活位置</span></p>
+                <h2 id="狄利克雷积分"><a href="#狄利克雷积分" class="headerlink" title="狄利克雷积分"></a>狄利克雷积分</h2><h3 id="问题导入"><a href="#问题导入" class="headerlink" title="问题导入"></a>问题导入</h3><p>求这个积分：<br>$$<br>\int_0^{\infty} \dfrac{sin(x)}{x}dx<br>$$<br>(test)占位</p>
 
                 
               </div>
@@ -333,7 +281,7 @@ $$
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%83%85%E6%99%AF%E5%9E%8B%E9%97%AE%E9%A2%98/" class="category-chain-item">情景型问题</a>
+  <a href="/categories/%E7%A7%AF%E5%88%86/" class="category-chain-item">积分</a>
   
   
 
@@ -353,8 +301,8 @@ $$
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>约瑟夫问题</div>
-      <div>http://xiaowangflymatharea.github.io/2025/06/17/约瑟夫问题/</div>
+      <div>狄利克雷积分</div>
+      <div>http://xiaowangflymatharea.github.io/2025/06/21/狄利克雷积分/</div>
     </div>
     <div class="license-meta">
       
@@ -366,7 +314,7 @@ $$
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年6月17日</div>
+          <div>2025年6月21日</div>
         </div>
       
       
@@ -398,9 +346,9 @@ $$
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/06/21/%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E7%A7%AF%E5%88%86/" title="狄利克雷积分">
+                      <a href="/2025/06/21/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98/" title="巴塞尔问题">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">狄利克雷积分</span>
+                        <span class="hidden-mobile">巴塞尔问题</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -408,8 +356,8 @@ $$
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/06/16/%E4%B8%80%E4%B8%AA%E8%91%97%E5%90%8D%E7%9A%84%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0%E9%97%AE%E9%A2%98/" title="一个著名的无穷级数问题">
-                        <span class="hidden-mobile">一个著名的无穷级数问题</span>
+                      <a href="/2025/06/17/%E7%BA%A6%E7%91%9F%E5%A4%AB%E9%97%AE%E9%A2%98/" title="约瑟夫问题">
+                        <span class="hidden-mobile">约瑟夫问题</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
