@@ -27,7 +27,7 @@
 <meta property="og:description" content="巴塞尔问题">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-06-21T01:56:53.000Z">
-<meta property="article:modified_time" content="2025-06-21T03:50:14.739Z">
+<meta property="article:modified_time" content="2025-06-24T05:48:24.375Z">
 <meta property="article:author" content="XiaowangFly">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -200,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          592 字
+          605 字
         
       </span>
     
@@ -211,7 +211,7 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
@@ -266,7 +266,21 @@
 <h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><p>我们发现<br>$$<br>sin(x)<br>$$<br>的函数图像，它与x轴的交点永远是<br>$$<br>x&#x3D;k\pi,k \in Z<br>$$<br>那不妨把sin(x)写成<br>$$<br>sin(x)&#x3D;C……(x-2\pi)(x-\pi)x(x+\pi)(x+2\pi)……<br>$$<br>即<br>$$<br>sin(x)&#x3D;C(x^2-1^2{\pi}^2)(x^2-2^2{\pi}^2)……<br>$$<br>其中常数C表示约束，因为没有C这个式子不收敛，所以我们加入常数C，现在让我们一起求常数C<br><br>我们对这个函数进行变换，并让x趋向于0，此时能得到左边是第一重要极限，即<br>$$<br>\lim_{x \to 0} \dfrac{sin(x)}{x}&#x3D;\lim_{x \to 0} C(x^2-1^2{\pi}^2)(x^2-2^2{\pi}^2)……<br>$$<br>所以左边是第一重要极限（<a href="#%E5%90%8E%E7%BB%AD%EF%BC%9A%E6%B1%82%E8%A7%A3%E7%AC%AC%E4%B8%80%E9%87%8D%E8%A6%81%E6%9E%81%E9%99%90">你该不会不知道吧</a>）<br>因此我们能求出常数C<br>$$<br>C&#x3D;\dfrac{1}{(-1^2{\pi}^2)(-2^2{\pi}^2)(-3^2{\pi}^2)……}<br>$$<br>带回原式可以得到sin(x)的无穷积形式，即<br>$$<br>sin(x)&#x3D;(1-\dfrac{x^2}{1^2{\pi}^2})(1-\dfrac{x^2}{2^2{\pi}^2})(1-\dfrac{x^2}{3^2{\pi}^2})<br>$$<br>将这个无穷积进行有针对性地展开，我们得到x²那一项的系数为<br>$$<br>-(\dfrac{x}{1^2{\pi}^2}+\dfrac{x}{2^2{\pi}^2}+\dfrac{x}{3^2{\pi}^2}+……)<br>$$<br>将x移到外面后，与x²合并，我们就得到了<br>$$<br>-(\dfrac{1}{1^2{\pi}^2}+\dfrac{1}{2^2{\pi}^2}+\dfrac{1}{3^2{\pi}^2}+……)<br>$$<br>是x³的系数<br>我们也知道，sin(x)的泰勒级数：<br>$$<br>sin(x)&#x3D;x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}……<br>$$<br>根据比较系数法我们得到</p>
 <p>$$<br>\dfrac{1}{1^2{\pi}^2}+\dfrac{1}{2^2{\pi}^2}+\dfrac{1}{3^2{\pi}^2}+……&#x3D;\dfrac{1}{3!}<br>$$<br>所以<br>$$<br>\dfrac{1}{1^2}+\dfrac{1}{2^2}+\dfrac{1}{3^2}+……&#x3D;\dfrac{\pi^2}{6}<br>$$<br>因此<br>$$<br>\dfrac{1}{1^2}+\dfrac{1}{2^2}+\dfrac{1}{3^2}+……&#x3D;\sum_{n&#x3D;1}^{\infty} \dfrac{1}{n^2}&#x3D;\zeta(2)&#x3D;\dfrac{\pi^2}{6}<br>$$<br>巴塞尔问题完美解决，学会了吗？<br><br><br><br></p>
 <h3 id="后续：求解第一重要极限"><a href="#后续：求解第一重要极限" class="headerlink" title="后续：求解第一重要极限"></a>后续：求解第一重要极限</h3><p>对于<br>$$<br>\lim_{x \to 0} \dfrac{sin(x)}{x}<br>$$<br>我们发现x&#x3D;0时分子分母同时为0，那么我们可以用洛必达法则，对分子分母同时求导<br>即<br>$$<br>\lim_{x \to 0} \dfrac{\dfrac{d}{dx}sin(x)}{\dfrac{d}{dx}x}<br>$$<br>得到<br>$$<br>\lim_{x \to 0}cos(x)&#x3D;1<br>$$<br>所以<br>$$<br>\lim_{x \to 0} \dfrac{sin(x)}{x}&#x3D;1<br>$$</p>
-
+<p>我有写错的地方吗？撰写评论吧！</p>
+<script src="https://giscus.app/client.js"
+        data-repo="xiaowangflymatharea/xiaowangflymatharea.github.io"
+        data-repo-id="R_kgDOO9IEXQ"
+        data-category-id="DIC_kwDOO9IEXc4Cr6Xv"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
                 
               </div>
             
