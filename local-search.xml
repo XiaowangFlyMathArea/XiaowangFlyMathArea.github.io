@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>留给同学的一道积分题</title>
+    <link href="/2025/06/25/%E7%95%99%E7%BB%99%E5%90%8C%E5%AD%A6%E7%9A%84%E4%B8%80%E9%81%93%E7%A7%AF%E5%88%86%E9%A2%98/"/>
+    <url>/2025/06/25/%E7%95%99%E7%BB%99%E5%90%8C%E5%AD%A6%E7%9A%84%E4%B8%80%E9%81%93%E7%A7%AF%E5%88%86%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="一道无穷积分题"><a href="#一道无穷积分题" class="headerlink" title="一道无穷积分题"></a>一道无穷积分题</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>留给同学的积分题：<br>$$<br>\int_{0}^{\infty} \dfrac{2}{x^2+1}dx<br>$$</p><h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><p>对于这类题，我只能说两个字：“秒了”<br><br>怎么秒呢？我们都知道：<br>$$<br>\dfrac{d}{dx}arctan(x)&#x3D;\dfrac{1}{x^2+1}<br>$$<br><a href="#%E5%90%8E%E7%BB%AD%EF%BC%9A%E5%AF%B9arctan-x-%E6%B1%82%E5%AF%BC">你不会不知道吧</a><br>所以我们提出2，变形：<br>$$<br>\int_{0}{\infty} \dfrac{2}{x^2+1}dx&#x3D;2\int_{0}^{\infty} \dfrac{1}{x^2+1}dx&#x3D;2(arctan(x)+C)\big|_{0}^{\infty}<br>$$</p><p>现在我们知道</p><p>$$<br>tan(90°)&#x3D;\infty<br>$$</p><p>所以<br>$$<br>\lim_{x \to \infty}arctan(x)&#x3D;90°&#x3D;\dfrac{\pi}{2}<br>$$</p><p>所以</p><p>$$<br>2(arctan(x)+C)\big|_{0}^{\infty}&#x3D;2 \times \dfrac{\pi}{2}&#x3D;\pi<br>$$</p><p>学会了吗？说话！</p><h3 id="后续：对arctan-x-求导"><a href="#后续：对arctan-x-求导" class="headerlink" title="后续：对arctan(x)求导"></a>后续：对arctan(x)求导</h3><p>我们设<br>$$<br>y&#x3D;arctan(x),x&#x3D;tan(y)<br>$$</p><p>则</p><p>$$<br>\dfrac{d}{dx}x&#x3D;\dfrac{d}{dx}tan(y)<br>$$</p><p>$$<br>\dfrac{dy}{dx}sec^2(y)&#x3D;1<br>$$</p><p>所以</p><p>$$<br>\dfrac{d}{dx}y&#x3D;\dfrac{1}{sec^2(y)}<br>$$</p><p>因为</p><p>$$<br>sin^2(x)+cos^2(x)&#x3D;1<br>$$</p><p>所以<br>$$<br>\dfrac{sin^2(x)}{cos^2(x)}+1&#x3D;\dfrac{1}{cos^2(x)}<br>$$</p><p>因为</p><p>$$<br>\dfrac{sin(x)}{cos(x)}&#x3D;tan(x),\dfrac{1}{cos(x)}&#x3D;sec(x)<br>$$</p><p>所以我们能得到</p><p>$$<br>sec^2(y)&#x3D;1+tan^2(y)<br>$$</p><p>有</p><p>$$<br>\dfrac{dy}{dx}&#x3D;\dfrac{1}{x^2+1}<br>$$</p><h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><p>所以</p><p>$$<br>\dfrac{d}{dx}arctan(x)&#x3D;\dfrac{1}{x^2+1}<br>$$</p><p>学会了吗？<a href="#%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3">再回去看看？</a></p><p>一起交流吧！</p><script src="https://giscus.app/client.js"        data-repo="xiaowangflymatharea/xiaowangflymatharea.github.io"        data-repo-id="R_kgDOO9IEXQ"        data-category-id="DIC_kwDOO9IEXc4Cr6Xv"        data-mapping="url"        data-strict="0"        data-reactions-enabled="1"        data-emit-metadata="0"        data-input-position="bottom"        data-theme="light"        data-lang="zh-CN"        crossorigin="anonymous"        async></script>]]></content>
+    
+    
+    <categories>
+      
+      <category>积分</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>巴塞尔问题</title>
     <link href="/2025/06/21/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98/"/>
     <url>/2025/06/21/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98/</url>
