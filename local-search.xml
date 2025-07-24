@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>非常易错的极限题</title>
+    <link href="/2025/07/24/%E9%9D%9E%E5%B8%B8%E6%98%93%E9%94%99%E7%9A%84%E6%9E%81%E9%99%90%E9%A2%98/"/>
+    <url>/2025/07/24/%E9%9D%9E%E5%B8%B8%E6%98%93%E9%94%99%E7%9A%84%E6%9E%81%E9%99%90%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>我们了解了自然底数$e$的定义:</p><p>$$<br>\lim_{n \to \infty} \left(1+\dfrac{1}{n}\right)^n&#x3D;e<br>$$</p><p>那么我们看这样的极限：</p><p>$$<br>\lim_{n \to \infty} \dfrac{\left(1+\dfrac{1}{n}\right)^{n^2}}{e^n}<br>$$</p><p>它等于多少呢？</p><h2 id="错解"><a href="#错解" class="headerlink" title="错解"></a><div style="color:red;">错解</div></h2><div style="color:red;">注意到原式能化成e的重要极限的定义，原式可以化为<p>$$<br>\lim_{n \to \infty} \dfrac{e^n}{e^n} &#x3D; 1<br>$$</p></div><h2 id="正解"><a href="#正解" class="headerlink" title="正解"></a>正解</h2><p>我们犯的错误是忽略了指数函数的增长速度，分子分母增长速度根本不一样！</p><p>那我们该怎么做呢？</p><p>根据恒等式$a^b&#x3D;&#x3D;e^{bln(a)} (a,b \in Z^+)$，将原极限化为<br>$$<br>\lim_{n \to \infty} e^{ln\dfrac{\left(1+\dfrac{1}{n}\right)^{n^2}}{e^n}}<br>$$</p><p>继续变换：</p><p>$$<br>\lim_{n \to \infty} e^{n^2ln\left(1+\dfrac{1}{n}\right)-n}<br>$$</p><p>到这一步我们似乎无从下手，我们不妨令$n&#x3D;\dfrac{1}{x}$<br>此时极限中的$x \to 0^+$<br>继续变换（接下来只看$e$的指数部分）</p><p>$$<br>\lim_{x \to 0^+} \dfrac{1}{x^2} ln\left(1+x\right)-\dfrac{1}{x}&#x3D;\lim_{x \to 0^+} \dfrac{ln\left(x+1\right)-x}{x^2}<br>$$</p><p>哦豁，$\dfrac{0}{0}$，洛它！<br>对这个极限使用洛必达法则，有上方极限为</p><p>$$<br>\lim_{x \to 0^+} \dfrac{\dfrac{1-x-1}{x+1}}{2x}&#x3D;\lim_{x \to 0^+} -\dfrac{\dfrac{x}{x+1}}{2x}<br>$$</p><p>将分子分母的$x$抵消有上方极限为</p><p>$$<br>-\dfrac{1}{2} \lim_{x \to 0^+} \dfrac{1}{x+1}<br>$$</p><p>我们可以得知右面的极限结果是1，那么$e$的指数部分的结果是$-\dfrac{1}{2}$</p><p>那么，原极限结果就是</p><p>$$<br>e^{-\dfrac{1}{2}}<br>$$</p><p>你还有更简单的方法吗？</p><script src="https://giscus.app/client.js"        data-repo="xiaowangflymatharea/xiaowangflymatharea.github.io"        data-repo-id="R_kgDOO9IEXQ"        data-category-id="DIC_kwDOO9IEXc4Cr6Xv"        data-mapping="url"        data-strict="0"        data-reactions-enabled="1"        data-emit-metadata="0"        data-input-position="bottom"        data-theme="light"        data-lang="zh-CN"        crossorigin="anonymous"        async></script>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>导数</title>
     <link href="/2025/07/11/%E5%AF%BC%E6%95%B0/"/>
     <url>/2025/07/11/%E5%AF%BC%E6%95%B0/</url>

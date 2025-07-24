@@ -19,15 +19,15 @@
   <meta name="author" content="XiaowangFly">
   <meta name="keywords" content="">
   
-    <meta name="description" content="巴塞尔问题">
+    <meta name="description" content="大学中非常容易错的极限题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="巴塞尔问题">
-<meta property="og:url" content="http://xiaowangflymatharea.github.io/2025/06/21/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="非常易错的极限题">
+<meta property="og:url" content="http://xiaowangflymatharea.github.io/2025/07/24/%E9%9D%9E%E5%B8%B8%E6%98%93%E9%94%99%E7%9A%84%E6%9E%81%E9%99%90%E9%A2%98/index.html">
 <meta property="og:site_name" content="XiaowangFly&#39;s Math Area">
-<meta property="og:description" content="巴塞尔问题">
+<meta property="og:description" content="大学中非常容易错的极限题">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-06-21T01:56:53.000Z">
-<meta property="article:modified_time" content="2025-07-09T12:26:04.368Z">
+<meta property="article:published_time" content="2025-07-24T03:34:29.000Z">
+<meta property="article:modified_time" content="2025-07-24T04:15:04.493Z">
 <meta property="article:author" content="XiaowangFly">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -35,7 +35,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>巴塞尔问题 - XiaowangFly&#39;s Math Area</title>
+  <title>非常易错的极限题 - XiaowangFly&#39;s Math Area</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -189,7 +189,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="巴塞尔问题"></span>
+            <span id="subtitle" data-typed-text="非常易错的极限题"></span>
           
         </div>
 
@@ -200,8 +200,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-06-21 09:56" pubdate>
-          2025年6月21日 上午
+        <time datetime="2025-07-24 11:34" pubdate>
+          2025年7月24日 中午
         </time>
       </span>
     
@@ -212,7 +212,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          605 字
+          390 字
         
       </span>
     
@@ -223,7 +223,7 @@
         
         
         
-          6 分钟
+          4 分钟
         
       </span>
     
@@ -269,16 +269,37 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">巴塞尔问题</h1>
+            <h1 id="seo-header">非常易错的极限题</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="巴塞尔问题"><a href="#巴塞尔问题" class="headerlink" title="巴塞尔问题"></a>巴塞尔问题</h2><h3 id="问题导入"><a href="#问题导入" class="headerlink" title="问题导入"></a>问题导入</h3><p>巴塞尔问题的实质其实就是求<br>$$<br>\zeta(2)<br>$$<br>的值，其实<br>$$<br>\zeta(2)&#x3D;\sum_{n&#x3D;1}^{\infty} \dfrac{1}{n^2}<br>$$</p>
-<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><p>我们发现<br>$$<br>sin(x)<br>$$<br>的函数图像，它与x轴的交点永远是<br>$$<br>x&#x3D;k\pi,k \in Z<br>$$<br>那不妨把sin(x)写成<br>$$<br>sin(x)&#x3D;C……(x-2\pi)(x-\pi)x(x+\pi)(x+2\pi)……<br>$$<br>即<br>$$<br>sin(x)&#x3D;C(x^2-1^2{\pi}^2)(x^2-2^2{\pi}^2)……<br>$$<br>其中常数C表示约束，因为没有C这个式子不收敛，所以我们加入常数C，现在让我们一起求常数C<br><br>我们对这个函数进行变换，并让x趋向于0，此时能得到左边是第一重要极限，即<br>$$<br>\lim_{x \to 0} \dfrac{sin(x)}{x}&#x3D;\lim_{x \to 0} C(x^2-1^2{\pi}^2)(x^2-2^2{\pi}^2)……<br>$$<br>所以左边是第一重要极限（<a href="#%E5%90%8E%E7%BB%AD%EF%BC%9A%E6%B1%82%E8%A7%A3%E7%AC%AC%E4%B8%80%E9%87%8D%E8%A6%81%E6%9E%81%E9%99%90">你该不会不知道吧</a>）<br>因此我们能求出常数C<br>$$<br>C&#x3D;\dfrac{1}{(-1^2{\pi}^2)(-2^2{\pi}^2)(-3^2{\pi}^2)……}<br>$$<br>带回原式可以得到sin(x)的无穷积形式，即<br>$$<br>sin(x)&#x3D;(1-\dfrac{x^2}{1^2{\pi}^2})(1-\dfrac{x^2}{2^2{\pi}^2})(1-\dfrac{x^2}{3^2{\pi}^2})<br>$$<br>将这个无穷积进行有针对性地展开，我们得到x²那一项的系数为<br>$$<br>-(\dfrac{x}{1^2{\pi}^2}+\dfrac{x}{2^2{\pi}^2}+\dfrac{x}{3^2{\pi}^2}+……)<br>$$<br>将x移到外面后，与x²合并，我们就得到了<br>$$<br>-(\dfrac{1}{1^2{\pi}^2}+\dfrac{1}{2^2{\pi}^2}+\dfrac{1}{3^2{\pi}^2}+……)<br>$$<br>是x³的系数<br>我们也知道，sin(x)的泰勒级数：<br>$$<br>sin(x)&#x3D;x-\dfrac{x^3}{3!}+\dfrac{x^5}{5!}……<br>$$<br>根据比较系数法我们得到</p>
-<p>$$<br>\dfrac{1}{1^2{\pi}^2}+\dfrac{1}{2^2{\pi}^2}+\dfrac{1}{3^2{\pi}^2}+……&#x3D;\dfrac{1}{3!}<br>$$<br>所以<br>$$<br>\dfrac{1}{1^2}+\dfrac{1}{2^2}+\dfrac{1}{3^2}+……&#x3D;\dfrac{\pi^2}{6}<br>$$<br>因此<br>$$<br>\dfrac{1}{1^2}+\dfrac{1}{2^2}+\dfrac{1}{3^2}+……&#x3D;\sum_{n&#x3D;1}^{\infty} \dfrac{1}{n^2}&#x3D;\zeta(2)&#x3D;\dfrac{\pi^2}{6}<br>$$<br>巴塞尔问题完美解决，学会了吗？<br><br><br><br></p>
-<h3 id="后续：求解第一重要极限"><a href="#后续：求解第一重要极限" class="headerlink" title="后续：求解第一重要极限"></a>后续：求解第一重要极限</h3><p>对于<br>$$<br>\lim_{x \to 0} \dfrac{sin(x)}{x}<br>$$<br>我们发现x&#x3D;0时分子分母同时为0，那么我们可以用洛必达法则，对分子分母同时求导<br>即<br>$$<br>\lim_{x \to 0} \dfrac{\dfrac{d}{dx}sin(x)}{\dfrac{d}{dx}x}<br>$$<br>得到<br>$$<br>\lim_{x \to 0}cos(x)&#x3D;1<br>$$<br>所以<br>$$<br>\lim_{x \to 0} \dfrac{sin(x)}{x}&#x3D;1<br>$$</p>
-<p>我有写错的地方吗？撰写评论吧！</p>
+                <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>我们了解了自然底数$e$的定义:</p>
+<p>$$<br>\lim_{n \to \infty} \left(1+\dfrac{1}{n}\right)^n&#x3D;e<br>$$</p>
+<p>那么我们看这样的极限：</p>
+<p>$$<br>\lim_{n \to \infty} \dfrac{\left(1+\dfrac{1}{n}\right)^{n^2}}{e^n}<br>$$</p>
+<p>它等于多少呢？</p>
+<h2 id="错解"><a href="#错解" class="headerlink" title="错解"></a><div style="color:red;">错解</div></h2><div style="color:red;">
+注意到原式能化成e的重要极限的定义，原式可以化为
+
+<p>$$<br>\lim_{n \to \infty} \dfrac{e^n}{e^n} &#x3D; 1<br>$$</p>
+</div>
+
+<h2 id="正解"><a href="#正解" class="headerlink" title="正解"></a>正解</h2><p>我们犯的错误是忽略了指数函数的增长速度，分子分母增长速度根本不一样！</p>
+<p>那我们该怎么做呢？</p>
+<p>根据恒等式$a^b&#x3D;&#x3D;e^{bln(a)} (a,b \in Z^+)$，将原极限化为<br>$$<br>\lim_{n \to \infty} e^{ln\dfrac{\left(1+\dfrac{1}{n}\right)^{n^2}}{e^n}}<br>$$</p>
+<p>继续变换：</p>
+<p>$$<br>\lim_{n \to \infty} e^{n^2ln\left(1+\dfrac{1}{n}\right)-n}<br>$$</p>
+<p>到这一步我们似乎无从下手，我们不妨令$n&#x3D;\dfrac{1}{x}$<br>此时极限中的$x \to 0^+$<br>继续变换（接下来只看$e$的指数部分）</p>
+<p>$$<br>\lim_{x \to 0^+} \dfrac{1}{x^2} ln\left(1+x\right)-\dfrac{1}{x}&#x3D;\lim_{x \to 0^+} \dfrac{ln\left(x+1\right)-x}{x^2}<br>$$</p>
+<p>哦豁，$\dfrac{0}{0}$，洛它！<br>对这个极限使用洛必达法则，有上方极限为</p>
+<p>$$<br>\lim_{x \to 0^+} \dfrac{\dfrac{1-x-1}{x+1}}{2x}&#x3D;\lim_{x \to 0^+} -\dfrac{\dfrac{x}{x+1}}{2x}<br>$$</p>
+<p>将分子分母的$x$抵消有上方极限为</p>
+<p>$$<br>-\dfrac{1}{2} \lim_{x \to 0^+} \dfrac{1}{x+1}<br>$$</p>
+<p>我们可以得知右面的极限结果是1，那么$e$的指数部分的结果是$-\dfrac{1}{2}$</p>
+<p>那么，原极限结果就是</p>
+<p>$$<br>e^{-\dfrac{1}{2}}<br>$$</p>
+<p>你还有更简单的方法吗？</p>
 <script src="https://giscus.app/client.js"
         data-repo="xiaowangflymatharea/xiaowangflymatharea.github.io"
         data-repo-id="R_kgDOO9IEXQ"
@@ -300,27 +321,6 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E7%BA%A7%E6%95%B0%E9%97%AE%E9%A2%98/" class="category-chain-item">级数问题</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
   
 </div>
 
@@ -330,8 +330,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>巴塞尔问题</div>
-      <div>http://xiaowangflymatharea.github.io/2025/06/21/巴塞尔问题/</div>
+      <div>非常易错的极限题</div>
+      <div>http://xiaowangflymatharea.github.io/2025/07/24/非常易错的极限题/</div>
     </div>
     <div class="license-meta">
       
@@ -343,7 +343,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年6月21日</div>
+          <div>2025年7月24日</div>
         </div>
       
       
@@ -375,18 +375,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/06/25/%E7%95%99%E7%BB%99%E5%90%8C%E5%AD%A6%E7%9A%84%E4%B8%80%E9%81%93%E7%A7%AF%E5%88%86%E9%A2%98/" title="留给同学的一道积分题">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">留给同学的一道积分题</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/06/21/%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E7%A7%AF%E5%88%86/" title="狄利克雷积分">
-                        <span class="hidden-mobile">狄利克雷积分</span>
+                      <a href="/2025/07/11/%E5%AF%BC%E6%95%B0/" title="导数">
+                        <span class="hidden-mobile">导数</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
