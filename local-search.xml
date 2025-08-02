@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>黄金比例的n次方结论</title>
+    <link href="/2025/08/02/%E9%BB%84%E9%87%91%E6%AF%94%E4%BE%8B%E7%9A%84n%E6%AC%A1%E6%96%B9%E7%BB%93%E8%AE%BA/"/>
+    <url>/2025/08/02/%E9%BB%84%E9%87%91%E6%AF%94%E4%BE%8B%E7%9A%84n%E6%AC%A1%E6%96%B9%E7%BB%93%E8%AE%BA/</url>
+    
+    <content type="html"><![CDATA[<p>特例：<br>$$<br>(\phi)^0&#x3D;1<br>$$</p><p>$$<br>(\phi)^n&#x3D;Fib(n+1)\phi+Fib(n)<br>$$</p><p>其中满足：</p><p>$$<br>\phi&#x3D;\dfrac{1+\sqrt{5}}{2},n \in Z^+<br>$$</p><p>含义：$Fib(x)$指第$x$个斐波那契数，$Fib(x)$的通项公式：</p><p>$$<br>Fib(x)&#x3D;\dfrac{1}{\sqrt{5}}\left(\left(\dfrac{1+\sqrt{5}}{2}\right)^n-\left(\dfrac{1-\sqrt{5}}{2}\right)^n\right)<br>$$</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>非常易错的极限题</title>
     <link href="/2025/07/24/%E9%9D%9E%E5%B8%B8%E6%98%93%E9%94%99%E7%9A%84%E6%9E%81%E9%99%90%E9%A2%98/"/>
     <url>/2025/07/24/%E9%9D%9E%E5%B8%B8%E6%98%93%E9%94%99%E7%9A%84%E6%9E%81%E9%99%90%E9%A2%98/</url>
